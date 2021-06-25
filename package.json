@@ -1,0 +1,23 @@
+{
+  "name": "mon-live",
+  "version": "1.0.0",
+  "description": "mon-live == nodemon + live-reload",
+  "main": "watch.js",
+  "type": "module",
+  "scripts": {
+    "example": "node watch command='node_./examples/main.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KolmaginDanil/mon-live.git"
+  },
+  "author": "dkolmahin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KolmaginDanil/mon-live/issues"
+  },
+  "homepage": "https://github.com/KolmaginDanil/mon-live#readme",
+  "devDependencies": {
+    "prettier": "^2.3.1"
+  }
+}

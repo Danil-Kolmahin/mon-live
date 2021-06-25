@@ -1,10 +1,10 @@
 'use strict';
 
 const initialOptions = {
-  url: 'http://localhost:3000/counter',
+  url: 'http://localhost:3000/',
   pyFlag: 'simple',
   command: 'node main',
-  watching: ['./main.js'],
+  watching: ['./'],
   without: ['./node_modules'],
   browserTab: -1,
   _command_executor: undefined,
@@ -18,6 +18,7 @@ const options = process.argv.reduce((acc, cur) => {
     if (cur.startsWith(string))
       acc[string] = JSON.parse(
         cur.split('=')[1]
+          .replaceAll('_', ' ')
           .replaceAll('\'', '\"'),
       );
   }
